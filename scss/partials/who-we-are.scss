@@ -1,0 +1,16 @@
+@import 'colors';
+
+p {
+  text-align: justify;
+  margin: 10px 0;
+}
+
+iframe {
+  align-self: center;
+  justify-self: center;
+  margin: 25px 0;
+  min-height: 400px;
+  max-width: 700px;
+  height: 400px;
+  width: 100%;
+}

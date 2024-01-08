@@ -1,0 +1,112 @@
+.botonera .main-button {
+  background-color: #8e7aae;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
+
+.lista-de-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  overflow-y: auto;
+  column-gap: 10px;
+  height: calc(100% - 55px);
+  padding: 10px;
+  row-gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid lightgray;
+  background-color: white;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  box-sizing: border-box;
+}
+.producto img {
+  width: 100%;
+}
+.producto span.botonera {
+  align-self: flex-start;
+  margin: 3px 0;
+}
+.producto .titulo {
+  font-size: 25px;
+}
+.producto .precio {
+  align-self: flex-start;
+  font-size: 20px;
+  color: lightslategray;
+}
+.producto .talles {
+  align-self: flex-start;
+  font-size: 13px;
+}
+.producto ul.lista-talles {
+  list-style-type: none;
+  padding-inline-start: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.producto ul.lista-talles li {
+  border: 1px solid lightgray;
+  height: 30px;
+  width: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  transition: background-color 250ms;
+}
+.producto ul.lista-talles li:hover {
+  color: white;
+  background-color: #8e7aae;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.botonera {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+  flex-wrap: wrap;
+}
+.botonera form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+}
+.botonera form input {
+  height: 40px;
+  width: 350px;
+}
+.botonera .main-button.filtrar {
+  width: 75px;
+  height: 40px;
+}
+.botonera .main-button.boton-buscar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  padding: 0 20px;
+}
+.botonera .main-button.boton-buscar img {
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(65deg) brightness(114%) contrast(106%);
+}
+
+/*# sourceMappingURL=products.css.map */

@@ -1,0 +1,13 @@
+@import 'colors';
+
+@mixin flex($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+%main-button {
+  background-color: $main-color;
+  color: white;
+  border: 0;
+  cursor: pointer;
+}

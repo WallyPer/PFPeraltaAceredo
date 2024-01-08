@@ -1,0 +1,115 @@
+@import 'generics';
+@import 'colors';
+
+.lista-de-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  overflow-y: auto;
+  column-gap: 10px;
+  height: calc(100% - 55px);
+  padding: 10px;
+  row-gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+.producto {
+  @include flex(column);
+  border: 1px solid $lightgray;
+  background-color: $white;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  box-sizing: border-box;
+
+  img {
+    width: 100%;
+  }
+
+  span.botonera {
+    align-self: flex-start;
+    margin: 3px 0;
+  }
+
+  .titulo {
+    font-size: 25px;
+  }
+
+  .precio {
+    align-self: flex-start;
+    font-size: 20px;
+    color: $lightslategray;
+  }
+
+  .talles {
+    align-self: flex-start;
+    font-size: 13px;
+  }
+
+  ul.lista-talles {
+    list-style-type: none;
+    padding-inline-start: 0;
+    @include flex();
+    justify-content: space-between;
+    width: 100%;
+    @include flex(row);
+
+    li {
+      border: 1px solid $lightgray;
+      height: 30px;
+      width: 40px;
+      text-align: center;
+      @include flex();
+      align-items: center;
+      justify-content: center;
+      background-color: $white;
+      color: $black;
+      transition: background-color 250ms;
+
+      &:hover {
+        color: $white;
+        background-color: $main-color;
+        border: 1px solid $black;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.botonera {
+  @include flex(row);
+  justify-content: space-between;
+  padding: 0 10px;
+  flex-wrap: wrap;
+
+  form {
+    @include flex(row);
+    align-items: center;
+    height: 40px;
+
+    input {
+      height: 40px;
+      width: 350px;
+    }
+  }
+
+  .main-button {
+    @extend %main-button;
+    &.filtrar {
+      width: 75px;
+      height: 40px;
+    }
+
+    &.boton-buscar {
+      @include flex(row);
+      align-items: center;
+      height: 40px;
+      padding: 0 20px;
+
+      img {
+        filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(65deg) brightness(114%) contrast(106%);
+      }
+    }
+  }
+}
