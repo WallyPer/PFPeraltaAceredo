@@ -105,12 +105,12 @@ main.contacto-donde-estamos section.contacto {
   overflow: auto;
   min-height: 370px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 480px) {
   main.contacto-donde-estamos section.contacto {
     padding: 10px 20px;
   }
 }
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 480px) {
   main.contacto-donde-estamos section.contacto {
     padding: 50px 100px;
   }
@@ -259,6 +259,11 @@ main.contacto-donde-estamos section.donde-estamos h2 {
   flex-direction: row;
   align-items: center;
   height: 40px;
+}
+@media only screen and (max-width: 480px) {
+  .botonera form {
+    width: 100%;
+  }
 }
 .botonera form input {
   height: 40px;
