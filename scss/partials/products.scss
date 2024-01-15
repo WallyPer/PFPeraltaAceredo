@@ -33,7 +33,11 @@
   }
 
   .titulo {
-    font-size: 25px;
+    font-size: 1.3em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
   }
 
   .precio {

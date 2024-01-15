@@ -206,7 +206,11 @@ main.contacto-donde-estamos section.donde-estamos h2 {
   margin: 3px 0;
 }
 .producto .titulo {
-  font-size: 25px;
+  font-size: 1.3em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
 }
 .producto .precio {
   align-self: flex-start;
