@@ -555,10 +555,17 @@ footer .seguinos-en {
 .carousel .carousel-inner .carousel-item .slider-text-container {
   background-color: rgba(106, 85, 140, 0.5);
   padding: 10px 35px;
-}
-.carousel .carousel-inner .carousel-item .slider-text-container .slider-text {
-  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   color: white;
+}
+.carousel .carousel-inner .carousel-item .slider-text-container .slider-titulo {
+  font-size: 2em;
+}
+.carousel .carousel-inner .carousel-item .slider-text-container .slider-subtitulo {
+  font-size: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */

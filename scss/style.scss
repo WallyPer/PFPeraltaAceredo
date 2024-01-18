@@ -265,10 +265,17 @@ footer {
         background-color: $main-color-active-rgb-50;
         @extend %center-absolute;
         padding: 10px 35px;
+        @include flex(column);
+        align-items: center;
+        justify-content: center;
+        color: $white;
 
-        .slider-text {
+        .slider-titulo {
           font-size: 2em;
-          color: $white;
+        }
+
+        .slider-subtitulo {
+          font-size: 2em;
         }
       }
     }
