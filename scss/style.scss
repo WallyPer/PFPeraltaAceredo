@@ -79,11 +79,6 @@ header {
     text-decoration: none;
   }
 
-  .logo-container:hover {
-    background-color: $main-hover-color;
-    color: $white;
-  }
-
   .logo-container img {
     width: 70px;
     border-radius: 50%;
@@ -279,6 +274,7 @@ footer {
         }
 
         .slider-subtitulo {
+          text-align: center;
           font-size: 1.2em;
         }
       }

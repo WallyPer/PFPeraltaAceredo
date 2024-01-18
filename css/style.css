@@ -389,10 +389,6 @@ header .logo-container {
   font-size: 20px;
   text-decoration: none;
 }
-header .logo-container:hover {
-  background-color: #637AB3;
-  color: white;
-}
 header .logo-container img {
   width: 70px;
   border-radius: 50%;
@@ -569,6 +565,7 @@ footer .seguinos-en {
   margin-bottom: 15px;
 }
 .carousel .carousel-inner .carousel-item .slider-text-container .slider-subtitulo {
+  text-align: center;
   font-size: 1.2em;
 }
 
