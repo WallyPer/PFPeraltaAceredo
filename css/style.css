@@ -1,16 +1,30 @@
 @charset "UTF-8";
 .botonera .main-button, form .enviar {
-  background-color: #8e7aae;
+  background-color: #484079;
   color: white;
   border: 0;
   cursor: pointer;
 }
 
+.carousel .carousel-inner .carousel-item .slider-text-container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
 .botonera .main-button, form .enviar {
-  background-color: #8e7aae;
+  background-color: #484079;
   color: white;
   border: 0;
   cursor: pointer;
+}
+
+.carousel .carousel-inner .carousel-item .slider-text-container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
 .contacto form {
@@ -169,10 +183,17 @@ main.contacto-donde-estamos section.donde-estamos h2 {
   }
 }
 .botonera .main-button, form .enviar {
-  background-color: #8e7aae;
+  background-color: #484079;
   color: white;
   border: 0;
   cursor: pointer;
+}
+
+.carousel .carousel-inner .carousel-item .slider-text-container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
 .lista-de-productos {
@@ -215,7 +236,7 @@ main.contacto-donde-estamos section.donde-estamos h2 {
 .producto .precio {
   align-self: flex-start;
   font-size: 20px;
-  color: lightslategray;
+  color: #BDB9B6;
 }
 .producto .talles {
   align-self: flex-start;
@@ -246,7 +267,7 @@ main.contacto-donde-estamos section.donde-estamos h2 {
 }
 .producto ul.lista-talles li:hover {
   color: white;
-  background-color: #8e7aae;
+  background-color: #484079;
   border: 1px solid black;
   cursor: pointer;
 }
@@ -349,7 +370,7 @@ body {
 
 header {
   height: 75px;
-  background-color: #8e7aae;
+  background-color: #484079;
   padding: 0 25px;
   display: flex;
   flex-direction: row;
@@ -369,8 +390,8 @@ header .logo-container {
   text-decoration: none;
 }
 header .logo-container:hover {
-  background-color: white;
-  color: black;
+  background-color: #637AB3;
+  color: white;
 }
 header .logo-container img {
   width: 70px;
@@ -383,7 +404,7 @@ nav {
   font-size: 20px;
 }
 nav div.navigation-menu-mobile .btn {
-  background-color: #8e7aae;
+  background-color: #484079;
   width: 100px;
 }
 nav div.navigation-menu-mobile .btn img {
@@ -394,7 +415,7 @@ nav div.navigation-menu-mobile .btn:active {
   background-color: #6a558c;
 }
 nav div.navigation-menu-mobile ul.dropdown-menu {
-  background-color: #8e7aae;
+  background-color: #484079;
 }
 nav div.navigation-menu-mobile ul.dropdown-menu.show {
   display: flex;
@@ -405,13 +426,13 @@ nav div.navigation-menu-mobile ul.dropdown-menu.show {
   font-size: 1em;
 }
 nav div.navigation-menu-mobile ul.dropdown-menu li {
-  background-color: #8e7aae;
+  background-color: #484079;
   text-decoration: none;
   height: 100%;
   transition: background-color 250ms linear;
 }
 nav div.navigation-menu-mobile ul.dropdown-menu li:hover {
-  background-color: white;
+  background-color: #637AB3;
   cursor: pointer;
   text-decoration: none;
 }
@@ -427,7 +448,7 @@ nav div.navigation-menu-mobile ul.dropdown-menu li a {
 }
 nav div.navigation-menu-mobile ul.dropdown-menu li a:hover {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 nav ul.navigation-menu-web {
   display: flex;
@@ -440,13 +461,13 @@ nav ul.navigation-menu-web {
   padding-inline-start: 0;
 }
 nav ul.navigation-menu-web li {
-  background-color: #8e7aae;
+  background-color: #484079;
   text-decoration: none;
   height: 100%;
   transition: background-color 250ms linear;
 }
 nav ul.navigation-menu-web li:hover {
-  background-color: white;
+  background-color: #637AB3;
   cursor: pointer;
   text-decoration: none;
 }
@@ -462,7 +483,7 @@ nav ul.navigation-menu-web li a {
 }
 nav ul.navigation-menu-web li a:hover {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 li {
@@ -496,7 +517,7 @@ footer {
   width: 100%;
   height: 60px;
   color: white;
-  background-color: #999999;
+  background-color: #555555;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -528,8 +549,16 @@ footer .seguinos-en {
   height: 100%;
 }
 .carousel .carousel-inner .carousel-item img {
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
+}
+.carousel .carousel-inner .carousel-item .slider-text-container {
+  background-color: rgba(106, 85, 140, 0.5);
+  padding: 10px 35px;
+}
+.carousel .carousel-inner .carousel-item .slider-text-container .slider-text {
+  font-size: 2em;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,5 +1,5 @@
 .botonera .main-button {
-  background-color: #8e7aae;
+  background-color: #484079;
   color: white;
   border: 0;
   cursor: pointer;
@@ -45,7 +45,7 @@
 .producto .precio {
   align-self: flex-start;
   font-size: 20px;
-  color: lightslategray;
+  color: #BDB9B6;
 }
 .producto .talles {
   align-self: flex-start;
@@ -76,7 +76,7 @@
 }
 .producto ul.lista-talles li:hover {
   color: white;
-  background-color: #8e7aae;
+  background-color: #484079;
   border: 1px solid black;
   cursor: pointer;
 }

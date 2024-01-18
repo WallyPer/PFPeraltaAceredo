@@ -7,7 +7,14 @@
 
 %main-button {
   background-color: $main-color;
-  color: white;
+  color: $white;
   border: 0;
   cursor: pointer;
+}
+
+%center-absolute {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
