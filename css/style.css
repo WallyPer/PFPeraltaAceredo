@@ -159,9 +159,6 @@ main.contacto-donde-estamos section.donde-estamos h2 {
   align-items: center;
   justify-items: center;
 }
-.lista-de-imagenes:hover > :not(:hover) {
-  opacity: 0.4;
-}
 .lista-de-imagenes img {
   width: 100%;
   height: 100%;
@@ -169,8 +166,25 @@ main.contacto-donde-estamos section.donde-estamos h2 {
   object-position: right;
   object-fit: cover;
 }
-.lista-de-imagenes:hover {
-  cursor: pointer;
+@media only screen and (max-width: 600px) {
+  .lista-de-imagenes img {
+    object-fit: contain;
+    object-position: center;
+  }
+  .lista-de-imagenes img:hover {
+    cursor: pointer;
+    animation-name: image-zoom-in-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .lista-de-imagenes:hover {
+    cursor: pointer;
+  }
+  .lista-de-imagenes:hover > :not(:hover) {
+    opacity: 0.4;
+  }
 }
 
 @keyframes image-zoom-in-out {
@@ -178,7 +192,6 @@ main.contacto-donde-estamos section.donde-estamos h2 {
     box-shadow: none;
   }
   to {
-    box-shadow: rgb(142, 122, 174) 0px 5px 20px;
     transform: scale(1.15);
   }
 }
@@ -507,6 +520,11 @@ main.quienes-somos {
   flex-direction: column;
   overflow: auto;
   padding: 50px 100px;
+}
+@media only screen and (max-width: 600px) {
+  main.quienes-somos {
+    padding: 25px 50px;
+  }
 }
 
 footer {

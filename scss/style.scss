@@ -212,6 +212,10 @@ main {
     @include flex(column);
     overflow: auto;
     padding: 50px 100px;
+
+    @media only screen and (max-width: 600px) {
+      padding: 25px 50px;
+    }
   }
 }
 
