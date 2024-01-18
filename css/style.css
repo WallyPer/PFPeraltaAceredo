@@ -554,15 +554,19 @@ footer .seguinos-en {
 }
 .carousel .carousel-inner .carousel-item .slider-text-container {
   background-color: rgba(106, 85, 140, 0.5);
-  padding: 10px 35px;
+  padding: 5% 15%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: white;
+  width: 90%;
+  text-align: center;
 }
 .carousel .carousel-inner .carousel-item .slider-text-container .slider-titulo {
   font-size: 2.4em;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 .carousel .carousel-inner .carousel-item .slider-text-container .slider-subtitulo {
   font-size: 1.2em;

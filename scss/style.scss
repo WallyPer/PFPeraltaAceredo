@@ -264,14 +264,18 @@ footer {
       .slider-text-container {
         background-color: $main-color-active-rgb-50;
         @extend %center-absolute;
-        padding: 10px 35px;
+        padding: 5% 15%;
         @include flex(column);
         align-items: center;
         justify-content: center;
         color: $white;
+        width: 90%;
+        text-align: center;
 
         .slider-titulo {
           font-size: 2.4em;
+          font-weight: bold;
+          margin-bottom: 15px;
         }
 
         .slider-subtitulo {
